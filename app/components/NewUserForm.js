@@ -1,4 +1,5 @@
 import { addUser } from '@/actions/user';
+import Button from './Button';
 
 const NewUserForm = () => {
 	const addUserWithFlag = addUser.bind(null, 'pro');
@@ -12,7 +13,7 @@ const NewUserForm = () => {
 				<input type="email" name="email" placeholder="Email" />
 			</div>
 			<div>
-				<button type="submit">Submit</button>
+				<Button />
 			</div>
 		</form>
 	);
