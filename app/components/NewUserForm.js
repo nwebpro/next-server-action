@@ -1,9 +1,10 @@
 import { addUser } from '@/actions/user';
 
 const NewUserForm = () => {
+	const addUserWithFlag = addUser.bind(null, 'pro');
 
 	return (
-		<form action={addUser}>
+		<form action={addUserWithFlag}>
 			<div>
 				<input type="text" name="name" placeholder="Name" />
 			</div>
